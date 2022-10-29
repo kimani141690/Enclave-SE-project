@@ -1,0 +1,90 @@
+
+.navbar {
+  display: flex;
+  background-color: #ca9e93;
+          height:3em ;
+          justify-content: space-between;
+}
+.navLeft{
+display: flex;
+font-size: 2em;
+font-weight: bolder;
+padding-top: 10px;
+padding-left: 5em;
+
+}
+.navRight{
+display: flex;
+padding-top: 10px;
+padding-right: 2em;
+
+
+}
+.classA {
+  display: flex;
+  border: solid black 2px;
+}
+.ALeft {
+  display: flex;
+  border: solid black 2px;
+  width: 40%;
+  margin: 5px 5px 5px;
+  padding: 1.2em;
+}
+.ARight {
+  display: flex;
+  border: solid black 2px;
+  width: 60%;
+  margin: 5px 5px 5px;
+  padding: 1.2em;
+}
+.ARight input {
+  width: 200px;
+  margin-left: 40%;
+  border: solid black 2px;
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.header {
+  background-color: #ca9e93;
+}
+th {
+  background-color: #ded5d0;
+}
+
+.Bheader {
+  background-color: #ca9e93;
+  width: 100%;
+  text-align: center;
+  height: 4em;
+  
+}
+.classC {
+  display: flex;
+  border: solid black 2px;
+}
+.classDLeft {
+  width: 50%;
+  border: solid black 2px;
+  display: flex;
+  border: solid black 2px;
+  width: 60%;
+  margin: 5px 5px 5px;
+  padding: 1.2em;
+}
+.classDRight {
+  width: 50%;
+  border: solid black 2px;
+  display: flex;
+  border: solid black 2px;
+  width: 60%;
+  margin: 5px 5px 5px;
+  padding: 1.2em;
+}

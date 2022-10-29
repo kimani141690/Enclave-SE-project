@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="assets/enclave.ico" type="image/x-icon" />
+
+    <title>Share Talent</title>
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar"></aside>
+      <main>
+        <div class="main-header row">
+          <div class="container row">
+            <h4>Share Talent</h4>
+          </div>
+          <!-- <input
+            type="text"
+            class="search-bar"
+            placeholder="Search for a topic"
+          /> -->
+          <div class="row profile-details">
+            <img src="assets/person.jpg" alt="" class="profile-photo" />
+            <p>134321</p>
+          </div>
+        </div>
+
+        <div class="main-container" id="create-discussion">
+          <form action="php/create_talent.php" method='POST' enctype="multipart/form-data">
+            <div class="form-container">
+              <label for="image">Talent Image/Video</label>
+              <input
+                type="file"
+                name="image"
+                id=""
+                placeholder="Discussion image"
+              />
+            </div>
+            <div class="form-container">
+              <textarea id="" cols="30" rows="10" name="text">
+ Text</textarea>
+    
+            </div>
+
+            <div class="row align-center">
+              <div class="form-container">
+                <input
+                  type="text"
+                  placeholder="Tags (separate with commas)"
+                  name="tags"
+                />
+              </div>
+              <button type="submit">Share Talent</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="js/sidebar.js"></script>
+</html>

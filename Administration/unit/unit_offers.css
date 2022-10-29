@@ -1,0 +1,133 @@
+
+:root {
+  --main-color: #ded5d0;
+  }
+  
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#462a1c;
+  }
+  
+  .sidebar {
+  width: 260px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: 100%;
+  border: 1px solid #462a1c;
+
+  }
+  
+  .sidebar-brand {
+  height: 90px;
+  padding: 1rem 0rem 1rem 2rem;
+  }
+  
+  .sidebar-brand span {
+  display: inline-block;
+  padding-right: 1rem;
+  }
+  
+  #diff{
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+  }
+  .sidebar-menu {
+  margin-top: 3rem;
+  }
+  
+  .sidebar-menu li {
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+  border: 1px solid #462a1c;
+  text-align: center;
+  
+  }
+  
+  .sidebar-menu a {
+  display: block;
+  color: #462a1c;
+  font-size: 0.1rem;
+  }
+  
+  
+  .sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  }
+  
+  .main-content {
+  margin-left: 260px;
+  text-align: center;
+  }
+
+  
+  header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  left: 260px;
+  width: calc(100% - 260px);
+  top: 0%;
+  z-index: 100;
+  background: #ded5d0;
+  border: 1px solid #462a1c;
+
+  }
+  
+ 
+  
+  header h2 {
+  color: #462a1c;
+  border: 1px solid #462a1c;
+
+  
+}
+  
+
+  
+  
+  
+  main {
+  margin-top: 89px;
+  padding: 2rem 1.5rem;
+  background: #ffffff;
+  
+  }
+
+  .units-offered{
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .card-center{
+  margin-top: 10px;
+  background: #ded5d0;
+  font-size: 1.7rem;
+  border: 1px solid #462a1c;
+  border-radius: 5px;
+  }
+
+  .card-center li{
+    border: 1px solid #462a1c;
+    margin: 30px;
+    border-radius: 10px;
+
+  }
+  
+ 
+  
+  
+  
+  
+  
+  

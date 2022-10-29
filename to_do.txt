@@ -1,0 +1,15 @@
+Student: JOIN on Mentor NOT done.
+Lecturer: JOIN on Faculty NOT done.
+
+Mentorship Assignment and Evaluation: Backend NOT done.
+Internship List and Evaluation: Backend NOT done.
+Unit Offers: Backend NOT done.
+
+Session for the images NOT done.
+
+Student Module
+--------------
+* Contact Admin - Create the page on our side, to be able to respond to the queries.
+
+
+Arabella's default Password:*C@G3s1z

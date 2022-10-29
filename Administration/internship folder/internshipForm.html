@@ -1,0 +1,152 @@
+<?php
+require '..\connection.php';
+session_start();
+
+$student_num = $_SESSION['student_number'];
+$student_fname = $_SESSION['student_name'];
+$student_sname = $_SESSION['student_sname'];
+$student_email= $_SESSION['school_email'];
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Appliation</title>
+  <style>
+    * {
+      padding: 0;
+      border: 0;
+      margin: 0;
+    }
+
+    .account {
+      background-color: #ded5d0;
+      width: 100%;
+      align-items: center;
+
+    }
+
+    .title {
+      background-color: #ca9e93;
+      height: em;
+    }
+
+    form {
+
+      border: solid black 2px;
+    }
+
+    h3{
+
+      text-decoration: underline;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 15px;
+
+    }
+
+    label {
+      width: 30px;
+      height: 30px;
+      margin-left: 200px;
+
+      color: black;
+    }
+
+   
+    #l{
+      width: 150px;
+      margin-left: 50px;
+
+    }
+    #il{
+
+      width: 150px;
+      margin-left: 50px;
+    }
+
+    #r{
+      width: 150px;
+      margin-left: 100px;
+
+    }
+    #ir{
+
+      width: 150px;
+      margin-left: 50px;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-left: 200px;
+      margin-bottom: 15px;
+      color: black;
+
+    }
+
+    textarea {
+
+      margin-top: 20px;
+      margin-bottom: 15px;
+      margin-left: 50px;
+      color: black;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title">
+    <h3>INTERNSHIP APPLICATION FORM</h3>
+  </div>
+  <div class="account">
+    <form action="#">
+
+      <label for="adm" id="l">ID Number</label>
+      <input type="text" name="adm" id="il" value=<?php echo "$student_num"; ?> contenteditable="false"> 
+
+      <label for="email" id="r">School Email</label>
+      <input type="email" name="email" id="ir" value=<?php echo "$student_email"; ?> contenteditable="false"><br />
+
+
+      <label for="name" id="l"> First Name</label>
+      <input type="text" name="name" id="il" value=<?php echo "$$student_fname"; ?> contenteditable="false">
+
+      <label for="name" id="r"> Second Name</label>
+      <input type="text" name="name" id="ir" value=<?php echo "$$student_sname"; ?> contenteditable="false"><br>
+    
+      <label for="gpa"id="l"> Average GPA</label>
+      <input type="text" name="gpa" id="pass" placeholder="GPA " /><br />
+   
+      <p>Fill in details concerning the company you intened to intern</p>
+
+      <label for="location" id="l">Company</label>
+      <input type="text" name="location" id="il" placeholder="Company Name" />
+ 
+      <label for="location" id="r">Location</label>
+      <input type="text" name="location" id="ir" placeholder="Location" /> <br>
+   
+
+      <p>What are your current qualification .(if any)</p>
+
+      <label for="location" id="l">skills</label><br>
+      <textarea name="qualification" id="question" cols="85" rows="5"></textarea>
+
+      <p>Why would you like to intern at chosen Place ?</p>
+
+      <textarea name="why" id="question" cols="85" rows="5"></textarea>
+
+      <p>Attach Resume <button>Upload File</button></p>
+
+      <input type="SUBMIT" name="submitBtn" style="height:1.5em ; width:1.5emx ;"/>
+    </form>
+  </div>
+</body>
+
+</html>
